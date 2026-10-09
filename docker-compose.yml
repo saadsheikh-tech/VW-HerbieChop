@@ -1,0 +1,20 @@
+services:
+  herbie-hub:
+    build: ./hub
+    ports:
+      - "8000:8000"
+    environment:
+      # Optional (read from .env): without an LLM key Herbie runs fully on rule-based fallbacks.
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      HERBIE_MODEL: ${HERBIE_MODEL:-}
+      # Optional: real Street View imagery in the windscreen
+      GOOGLE_MAPS_API_KEY: ${GOOGLE_MAPS_API_KEY:-}
+      # "overpass" = live OpenStreetMap landmarks; empty = bundled Berlin cache only
+      HERBIE_POI_SOURCE: ${HERBIE_POI_SOURCE:-}
+    volumes:
+      - herbie-data:/data
+    restart: unless-stopped
+
+volumes:
+  herbie-data:

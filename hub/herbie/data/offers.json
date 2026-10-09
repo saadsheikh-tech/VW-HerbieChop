@@ -1,0 +1,8 @@
+[
+  {"id": "offer-1", "brand": "McDonald's", "item": "cheeseburger", "deal": "Cheeseburger menu, 20% off until 21:00",
+   "place": "McDonald's Kaiserdamm", "lat": 52.5093, "lon": 13.2960, "sponsored": true, "mock": true},
+  {"id": "offer-2", "brand": "Curry 36", "item": "currywurst", "deal": "Currywurst + fries for 5 €",
+   "place": "Curry 36 Mehringdamm", "lat": 52.4934, "lon": 13.3878, "sponsored": true, "mock": true},
+  {"id": "offer-3", "brand": "Local bakery", "item": "pretzel", "deal": "Second pretzel free",
+   "place": "Bakery Wrangelkiez", "lat": 52.4995, "lon": 13.4400, "sponsored": false, "mock": true}
+]

@@ -1,0 +1,11 @@
+[Simulated cabin-audio transcript of the 08:30 team stand-up. Stands in for live speech-to-text.]
+Lena: Morning everyone. Quick round today. Saad, you're in the car?
+Saad: Yes, joining from the car, audio only. Herbie is taking notes.
+Lena: Great. So the context engine refactor is merged. Jonas, how is the map integration going?
+Jonas: Overpass works, but the rate limit hit us twice yesterday. I will add a local cache by Thursday.
+Lena: Good. Saad, the personalization demo?
+Saad: Comfort profile works end to end. I still need the decline logic tested. I will finish the tests today.
+Mia: Quick one, the jury asked for latency numbers. We agreed to measure end-to-end response time for the visual dialogue.
+Lena: Agreed. Mia, can you own that and share numbers next stand-up?
+Mia: Yes, I'll do it.
+Lena: We decided to keep SQLite for the prototype and document the Postgres path instead. Anything else? No? Thanks all.

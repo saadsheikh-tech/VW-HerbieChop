@@ -1,0 +1,633 @@
+{
+ "fuel": [
+  {
+   "id": "osm-26756830",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.530694,
+   "lon": 13.328225,
+   "address": "Beusselstraße 55"
+  },
+  {
+   "id": "osm-26867411",
+   "name": "Bavaria petrol",
+   "brand": null,
+   "lat": 52.501974,
+   "lon": 13.294496,
+   "address": "Heilbronner Straße 14"
+  },
+  {
+   "id": "osm-26882421",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.484265,
+   "lon": 13.320669,
+   "address": null
+  },
+  {
+   "id": "osm-27259583",
+   "name": "Esso",
+   "brand": "Esso",
+   "lat": 52.519722,
+   "lon": 13.341421,
+   "address": "Lessingstraße 4"
+  },
+  {
+   "id": "osm-27409122",
+   "name": "Star",
+   "brand": "star",
+   "lat": 52.518957,
+   "lon": 13.302962,
+   "address": null
+  },
+  {
+   "id": "osm-29997723",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.50837,
+   "lon": 13.280947,
+   "address": "Messedamm 8-10"
+  },
+  {
+   "id": "osm-61818198",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.492409,
+   "lon": 13.309146,
+   "address": "Westfälische Straße 9-10"
+  },
+  {
+   "id": "osm-64707597",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.513854,
+   "lon": 13.421876,
+   "address": "Holzmarktstraße 12/14"
+  },
+  {
+   "id": "osm-68363395",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.497233,
+   "lon": 13.449874,
+   "address": "Vor dem Schlesischen Tor 2"
+  },
+  {
+   "id": "osm-260744445",
+   "name": "Total",
+   "brand": "Total",
+   "lat": 52.483804,
+   "lon": 13.478659,
+   "address": "Bulgarische Straße 9"
+  },
+  {
+   "id": "osm-272517807",
+   "name": "JET",
+   "brand": "JET",
+   "lat": 52.489294,
+   "lon": 13.374468,
+   "address": "Kreuzbergstraße 41"
+  },
+  {
+   "id": "osm-303068243",
+   "name": "Esso",
+   "brand": "Esso",
+   "lat": 52.49012,
+   "lon": 13.345465,
+   "address": "Martin-Luther-Straße 67"
+  },
+  {
+   "id": "osm-309880944",
+   "name": "JET",
+   "brand": "JET",
+   "lat": 52.53383,
+   "lon": 13.452352,
+   "address": "Storkower Straße 130"
+  },
+  {
+   "id": "osm-312391523",
+   "name": "Sprint",
+   "brand": "Sprint",
+   "lat": 52.499446,
+   "lon": 13.319364,
+   "address": "Lietzenburger Straße 97"
+  },
+  {
+   "id": "osm-669888809",
+   "name": "Total",
+   "brand": "TotalEnergies",
+   "lat": 52.528872,
+   "lon": 13.41825,
+   "address": "Prenzlauer Allee 1"
+  },
+  {
+   "id": "osm-669891011",
+   "name": "Total Station",
+   "brand": "TotalEnergies",
+   "lat": 52.530777,
+   "lon": 13.441158,
+   "address": "Margarete-Sommer-Straße 2"
+  },
+  {
+   "id": "osm-732712010",
+   "name": "Autogas Fernholz Apparat...",
+   "brand": null,
+   "lat": 52.522,
+   "lon": 13.2852,
+   "address": "Sophie-Charlotten-Straße"
+  },
+  {
+   "id": "osm-1185977575",
+   "name": "Star",
+   "brand": "star",
+   "lat": 52.517358,
+   "lon": 13.301193,
+   "address": "Kaiser-Friedrich-Straße 102"
+  },
+  {
+   "id": "osm-3163972569",
+   "name": "Esso",
+   "brand": "Esso",
+   "lat": 52.492754,
+   "lon": 13.390369,
+   "address": "Gneisenaustraße 106"
+  },
+  {
+   "id": "osm-3273363412",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.512763,
+   "lon": 13.319317,
+   "address": "Bismarckstraße 1-2"
+  },
+  {
+   "id": "osm-7650561737",
+   "name": "Shell",
+   "brand": "Shell",
+   "lat": 52.51588,
+   "lon": 13.301369,
+   "address": "Kaiser-Friedrich-Straße 95"
+  },
+  {
+   "id": "osm-7850844059",
+   "name": "Shell",
+   "brand": "Shell",
+   "lat": 52.534319,
+   "lon": 13.28312,
+   "address": "Letterhausweg 2"
+  },
+  {
+   "id": "osm-8342824464",
+   "name": "Total",
+   "brand": "TotalEnergies",
+   "lat": 52.52744,
+   "lon": 13.457926,
+   "address": "Storkower Straße 174"
+  },
+  {
+   "id": "osm-9248681747",
+   "name": "Shell",
+   "brand": "Shell",
+   "lat": 52.488821,
+   "lon": 13.306693,
+   "address": "Hohenzollerndamm 41-42"
+  },
+  {
+   "id": "osm-12294200377",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.49572,
+   "lon": 13.287629,
+   "address": "Kurfürstendamm 128"
+  },
+  {
+   "id": "osm-12295940984",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.498772,
+   "lon": 13.422852,
+   "address": "Skalitzer Straße 26"
+  },
+  {
+   "id": "osm-12303608936",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.484604,
+   "lon": 13.38146,
+   "address": "Dudenstraße 19;21"
+  },
+  {
+   "id": "osm-12303844694",
+   "name": "Esso",
+   "brand": "Esso",
+   "lat": 52.494221,
+   "lon": 13.284607,
+   "address": "Hubertusallee 1-3"
+  },
+  {
+   "id": "osm-12306619437",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.52079,
+   "lon": 13.333485,
+   "address": "Levetzowstraße 9"
+  },
+  {
+   "id": "osm-12306627701",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.507679,
+   "lon": 13.301675,
+   "address": "Kaiser-Friedrich-Straße 45b"
+  },
+  {
+   "id": "osm-12307317284",
+   "name": "Shell",
+   "brand": "Shell",
+   "lat": 52.492904,
+   "lon": 13.331531,
+   "address": "Bundesallee 200"
+  },
+  {
+   "id": "osm-12307330205",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.525405,
+   "lon": 13.357041,
+   "address": "Rathenower Straße 8"
+  },
+  {
+   "id": "osm-12313785836",
+   "name": "Shell",
+   "brand": "Shell",
+   "lat": 52.504065,
+   "lon": 13.408343,
+   "address": "Oranienstraße 138"
+  },
+  {
+   "id": "osm-36936293",
+   "name": "Shell",
+   "brand": "Shell",
+   "lat": 52.525557,
+   "lon": 13.324308,
+   "address": "Kaiserin-Augusta-Allee 9-9a"
+  },
+  {
+   "id": "osm-37419537",
+   "name": "Shell",
+   "brand": "Shell",
+   "lat": 52.499201,
+   "lon": 13.43311,
+   "address": "Skalitzer Straße 48"
+  },
+  {
+   "id": "osm-79868402",
+   "name": "SB Tank",
+   "brand": "SB Tank",
+   "lat": 52.514385,
+   "lon": 13.321928,
+   "address": "Fraunhoferstraße 33-36"
+  },
+  {
+   "id": "osm-263824280",
+   "name": "Shell",
+   "brand": "Shell",
+   "lat": 52.519914,
+   "lon": 13.355151,
+   "address": "Paulstraße 20"
+  },
+  {
+   "id": "osm-341796303",
+   "name": "Shell",
+   "brand": "Shell",
+   "lat": 52.496385,
+   "lon": 13.346634,
+   "address": "Martin-Luther-Straße 29"
+  },
+  {
+   "id": "osm-364588563",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.481553,
+   "lon": 13.441327,
+   "address": "Sonnenallee 113"
+  },
+  {
+   "id": "osm-379688485",
+   "name": "TotalEnergies Tempelhofer Ufer",
+   "brand": "TotalEnergies",
+   "lat": 52.500476,
+   "lon": 13.376666,
+   "address": "Tempelhofer Ufer 33-35"
+  },
+  {
+   "id": "osm-547040234",
+   "name": "Sprint",
+   "brand": "Sprint",
+   "lat": 52.484521,
+   "lon": 13.429248,
+   "address": "Reuterstraße 18-19"
+  },
+  {
+   "id": "osm-932153077",
+   "name": "Aral",
+   "brand": "Aral",
+   "lat": 52.501978,
+   "lon": 13.409851,
+   "address": "Prinzenstraße 29"
+  },
+  {
+   "id": "osm-1022638074",
+   "name": "Fuel station",
+   "brand": null,
+   "lat": 52.482993,
+   "lon": 13.402378,
+   "address": null
+  },
+  {
+   "id": "osm-1329644964",
+   "name": "Sprint",
+   "brand": "Sprint",
+   "lat": 52.533784,
+   "lon": 13.445083,
+   "address": "Kniprodestraße 25"
+  }
+ ],
+ "cafe": [
+  {
+   "id": "osm-66917199",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.519403,
+   "lon": 13.388738,
+   "address": null
+  },
+  {
+   "id": "osm-66917229",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.516729,
+   "lon": 13.379773,
+   "address": "Pariser Platz 4A"
+  },
+  {
+   "id": "osm-87040343",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.511072,
+   "lon": 13.390018,
+   "address": "Friedrichstraße 61"
+  },
+  {
+   "id": "osm-975312193",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.523193,
+   "lon": 13.402087,
+   "address": "Neue Promenade 3"
+  },
+  {
+   "id": "osm-3455614578",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.500988,
+   "lon": 13.31278,
+   "address": "Kurfürstendamm 61"
+  },
+  {
+   "id": "osm-3987051075",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.519587,
+   "lon": 13.415226,
+   "address": null
+  },
+  {
+   "id": "osm-4388936224",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.52125,
+   "lon": 13.411599,
+   "address": null
+  },
+  {
+   "id": "osm-6588859242",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.505701,
+   "lon": 13.331626,
+   "address": "Joachimsthaler Straße 1-4"
+  },
+  {
+   "id": "osm-7132010681",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.506382,
+   "lon": 13.449798,
+   "address": null
+  },
+  {
+   "id": "osm-9507916333",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.50317,
+   "lon": 13.329607,
+   "address": null
+  },
+  {
+   "id": "osm-10800211947",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.520821,
+   "lon": 13.414201,
+   "address": null
+  },
+  {
+   "id": "osm-11717339483",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.525022,
+   "lon": 13.387797,
+   "address": null
+  },
+  {
+   "id": "osm-12601250398",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.503669,
+   "lon": 13.33865,
+   "address": null
+  },
+  {
+   "id": "osm-429271492",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.52466,
+   "lon": 13.37017,
+   "address": null
+  },
+  {
+   "id": "osm-740025150",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.505822,
+   "lon": 13.445281,
+   "address": null
+  },
+  {
+   "id": "osm-1047617421",
+   "name": "Starbucks",
+   "brand": "Starbucks",
+   "lat": 52.507048,
+   "lon": 13.332554,
+   "address": null
+  }
+ ],
+ "vw_service": [
+  {
+   "id": "osm-573822495",
+   "name": "VW & Audi Andreas Witt",
+   "brand": "Volkswagen",
+   "lat": 52.541454,
+   "lon": 13.488052,
+   "address": null
+  },
+  {
+   "id": "osm-1120057599",
+   "name": "Autohaus Thomas Kapinsky",
+   "brand": "Volkswagen",
+   "lat": 52.573487,
+   "lon": 13.44389,
+   "address": null
+  },
+  {
+   "id": "osm-1244587610",
+   "name": "Volkswagen Automobile Berlin",
+   "brand": "Volkswagen",
+   "lat": 52.539099,
+   "lon": 13.229269,
+   "address": null
+  },
+  {
+   "id": "osm-4274214430",
+   "name": "Audi Zentrum Spandau",
+   "brand": "Audi;Volkswagen",
+   "lat": 52.534435,
+   "lon": 13.192235,
+   "address": "Brunsbütteler Damm 40"
+  },
+  {
+   "id": "osm-7296525279",
+   "name": "Autohaus Golbeck GmbH",
+   "brand": "Volkswagen",
+   "lat": 52.514315,
+   "lon": 13.461488,
+   "address": "Kreutzigerstraße 28"
+  },
+  {
+   "id": "osm-7548668185",
+   "name": "Kfz-Service Jet",
+   "brand": "Porsche;Audi;BMW;Ford;Land Rover;Mercedes-Benz;Volkswagen;Peugeot;Renault;Smart",
+   "lat": 52.562239,
+   "lon": 13.38145,
+   "address": null
+  },
+  {
+   "id": "osm-8063538422",
+   "name": "Käferservice",
+   "brand": "Volkswagen",
+   "lat": 52.558237,
+   "lon": 13.375238,
+   "address": null
+  },
+  {
+   "id": "osm-30132411",
+   "name": "Autohaus Volkswagen",
+   "brand": null,
+   "lat": 52.582377,
+   "lon": 13.290616,
+   "address": "Berliner Straße 68"
+  },
+  {
+   "id": "osm-30132450",
+   "name": "Volkswagen",
+   "brand": "Volkswagen",
+   "lat": 52.581652,
+   "lon": 13.293809,
+   "address": "Wittestraße 27A"
+  },
+  {
+   "id": "osm-45727372",
+   "name": "Autozentrum Möbus",
+   "brand": "Volkswagen",
+   "lat": 52.559687,
+   "lon": 13.492664,
+   "address": "Hansastraße 211"
+  },
+  {
+   "id": "osm-106221237",
+   "name": "Volkswagen Automobile Berlin",
+   "brand": "Volkswagen",
+   "lat": 52.416193,
+   "lon": 13.283399,
+   "address": "Goerzallee 251"
+  },
+  {
+   "id": "osm-152494957",
+   "name": "Auto Zellmann VW",
+   "brand": null,
+   "lat": 52.422499,
+   "lon": 13.528137,
+   "address": null
+  },
+  {
+   "id": "osm-186741131",
+   "name": "Volkswagen Automobile Berlin",
+   "brand": "Volkswagen",
+   "lat": 52.518733,
+   "lon": 13.327245,
+   "address": "Franklinstraße 5"
+  },
+  {
+   "id": "osm-214108846",
+   "name": "Volkswagen Automobile Berlin GmbH",
+   "brand": "Skoda",
+   "lat": 52.469185,
+   "lon": 13.386782,
+   "address": null
+  },
+  {
+   "id": "osm-325838138",
+   "name": "Autohaus Berolina",
+   "brand": "Volkswagen",
+   "lat": 52.490425,
+   "lon": 13.30189,
+   "address": "Cicerostraße 34"
+  },
+  {
+   "id": "osm-414924028",
+   "name": "ASB Autohaus Berlin GmbH - Volkswagen Zentrum Marzahn",
+   "brand": null,
+   "lat": 52.531663,
+   "lon": 13.531439,
+   "address": null
+  },
+  {
+   "id": "osm-1031974147",
+   "name": "Volkswagen Automobile Berlin",
+   "brand": "Volkswagen",
+   "lat": 52.464417,
+   "lon": 13.404327,
+   "address": "Oberlandstraße 40-41"
+  },
+  {
+   "id": "osm-1196386660",
+   "name": "Klaus Piontek",
+   "brand": "Volkswagen",
+   "lat": 52.414587,
+   "lon": 13.498396,
+   "address": null
+  }
+ ],
+ "source": "OpenStreetMap contributors, via Overpass API (ODbL)"
+}

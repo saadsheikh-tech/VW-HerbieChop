@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Herbie Cockpit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="cockpit.css">
+</head>
+<body>
+<div id="cabin">
+
+  <!-- ===== Windscreen: the street, AR markers, side windows ===== -->
+  <div id="windscreen">
+    <img id="sv" alt="" hidden>
+    <canvas id="view"></canvas>
+    <div id="hud"></div>
+    <div id="pointer" hidden></div>
+    <button class="side-window left" id="side-left" title="Point out of the left window (Q)"><span>◀ point left</span><div class="side-list"></div></button>
+    <button class="side-window right" id="side-right" title="Point out of the right window (E)"><span>point right ▶</span><div class="side-list"></div></button>
+    <div id="subtitle" aria-live="polite"></div>
+    <div id="street-sign"></div>
+  </div>
+
+  <!-- ===== Dashboard: vents, ambient light, cluster, wheel ===== -->
+  <svg id="dash" viewBox="0 0 1600 520" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="dashGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2b3238"/><stop offset=".18" stop-color="#1b2025"/><stop offset="1" stop-color="#0d1013"/>
+      </linearGradient>
+      <linearGradient id="trimGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#3a434a"/><stop offset=".5" stop-color="#55606a"/><stop offset="1" stop-color="#3a434a"/>
+      </linearGradient>
+    </defs>
+    <path d="M0 70 C 300 20, 1300 20, 1600 70 L1600 520 L0 520 Z" fill="url(#dashGrad)"/>
+    <path d="M0 70 C 300 20, 1300 20, 1600 70" stroke="#4a545c" stroke-width="3" fill="none"/>
+    <path id="ambient" d="M40 132 C 400 98, 1200 98, 1560 132" stroke="#9fb7c4" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- left vent -->
+    <g transform="translate(36 150)"><rect width="150" height="70" rx="22" fill="#0a0c0e" stroke="url(#trimGrad)" stroke-width="5"/>
+      <g stroke="#2a3137" stroke-width="5"><line x1="16" y1="22" x2="134" y2="22"/><line x1="16" y1="36" x2="134" y2="36"/><line x1="16" y1="50" x2="134" y2="50"/></g></g>
+    <!-- right vent -->
+    <g transform="translate(1414 150)"><rect width="150" height="70" rx="22" fill="#0a0c0e" stroke="url(#trimGrad)" stroke-width="5"/>
+      <g stroke="#2a3137" stroke-width="5"><line x1="16" y1="22" x2="134" y2="22"/><line x1="16" y1="36" x2="134" y2="36"/><line x1="16" y1="50" x2="134" y2="50"/></g></g>
+    <!-- centre vents under the screen -->
+    <g transform="translate(860 445)"><rect width="440" height="40" rx="14" fill="#0a0c0e" stroke="url(#trimGrad)" stroke-width="4"/>
+      <g stroke="#2a3137" stroke-width="4"><line x1="14" y1="14" x2="426" y2="14"/><line x1="14" y1="26" x2="426" y2="26"/></g></g>
+    <!-- glovebox seam -->
+    <path d="M1340 300 L1560 290" stroke="#252c32" stroke-width="3"/>
+  </svg>
+
+  <div id="cluster">
+    <div class="c-left"><div id="c-speed">0</div><div class="unit">km/h</div></div>
+    <div class="c-mid">
+      <div id="c-badges"></div>
+      <div id="c-street">—</div>
+      <div id="c-next"></div>
+    </div>
+    <div class="c-right"><div class="gear">D</div><div id="c-clock"></div>
+      <div id="c-fuel" title="Fuel"><span>⛽</span><div class="bar"><i></i></div><b>--</b></div></div>
+  </div>
+
+  <div id="wheel-wrap">
+    <svg id="wheel" viewBox="-200 -200 400 400" aria-hidden="true">
+      <defs><radialGradient id="rim" r="1"><stop offset=".86" stop-color="#2c3237"/><stop offset="1" stop-color="#14181b"/></radialGradient></defs>
+      <circle r="168" fill="none" stroke="#15191c" stroke-width="40"/>
+      <circle r="168" fill="none" stroke="#2c3338" stroke-width="30"/>
+      <path d="M-150 20 L-58 30 L-48 70 L48 70 L58 30 L150 20" stroke="#262c31" stroke-width="34" fill="none" stroke-linejoin="round"/>
+      <path d="M-40 70 L-30 150 L30 150 L40 70" fill="#262c31"/>
+      <circle r="62" fill="#1d2226" stroke="#3a434a" stroke-width="4"/>
+      <!-- emblem -->
+      <g id="emblem"><circle r="34" fill="none" stroke="#c9d3da" stroke-width="5"/>
+        <path d="M-22 -18 L-9 14 L0 -6 L9 14 L22 -18" fill="none" stroke="#c9d3da" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M-12 -28 L0 -2 L12 -28" fill="none" stroke="#c9d3da" stroke-width="5" stroke-linejoin="round"/></g>
+      <circle cx="-108" cy="34" r="9" fill="#39424a"/><circle cx="108" cy="34" r="9" fill="#39424a"/>
+    </svg>
+    <button id="wheel-mic" class="mic" title="Talk to Herbie (hold Space)" aria-label="Talk to Herbie">🎤</button>
+  </div>
+
+  <!-- ===== Infotainment ===== -->
+  <div id="screen">
+    <nav id="tabs">
+      <button data-tab="herbie" class="on">Herbie</button>
+      <button data-tab="nav">Navigation</button>
+      <button data-tab="media">Media</button>
+      <button data-tab="car">Car</button>
+      <button data-tab="demo">Demo</button>
+    </nav>
+    <div id="nowplaying"><span class="eq"><i></i><i></i><i></i></span><span id="np-text">—</span>
+      <button data-say="I like this song" title="Like">👍</button><button data-say="I don't like this song" title="Dislike">👎</button>
+      <button data-say="next song" title="Skip">⏭</button></div>
+
+    <section data-pane="herbie" class="pane on">
+      <div id="chat"></div>
+      <div class="chips">
+        <button data-say="Hey Herbie, what's that?">What's that?</button>
+        <button data-say="Where are we?">Where are we?</button>
+        <button data-say="Drive to the TV Tower">Drive to TV Tower</button>
+        <button data-say="How are you doing?">How are you?</button>
+      </div>
+      <form id="say">
+        <button type="button" class="mic" id="screen-mic" aria-label="Talk to Herbie">🎤</button>
+        <input id="text" autocomplete="off" placeholder="Hey Herbie, what's that building?">
+        <button type="submit">Send</button>
+      </form>
+      <div class="toggles">
+        <label><input type="checkbox" id="tts" checked> Herbie speaks</label>
+        <label><input type="checkbox" id="handsfree"> Hands-free "Hey Herbie"</label>
+      </div>
+    </section>
+
+    <section data-pane="nav" class="pane">
+      <div id="map"></div>
+      <div class="nav-row">
+        <select id="dest" aria-label="Destination"></select>
+        <button id="go" class="primary">Go</button>
+        <button id="stop">Stop</button>
+        <button id="restart" title="Back to the Victory Column">⟲</button>
+      </div>
+      <div class="nav-row">
+        <span>Sim speed</span>
+        <div class="seg" id="scale"><button data-v="1">1×</button><button data-v="2">2×</button><button data-v="4">4×</button><button data-v="8">8×</button></div>
+        <button id="pause">Pause</button>
+      </div>
+    </section>
+
+    <section data-pane="media" class="pane">
+      <div id="np-big"></div>
+      <div id="upnext"></div>
+      <div class="chips">
+        <button data-say="Recommend me some music">Recommend something</button>
+        <button data-say="Play some calming music">Calm</button>
+        <button data-say="Play party music">Party</button>
+      </div>
+    </section>
+
+    <section data-pane="car" class="pane">
+      <dl id="car"></dl>
+    </section>
+
+    <section data-pane="demo" class="pane">
+      <div id="scenarios"></div>
+      <div class="controls">
+        <label>Fatigue <input type="range" min="0" max="1" step="0.05" data-k="fatigue"></label>
+        <label>Hunger <input type="range" min="0" max="1" step="0.05" data-k="hunger"></label>
+        <label>Passengers <input type="number" min="0" max="8" data-k="passengers"></label>
+        <label>Weather <select data-k="weather"><option>dry</option><option>rain</option><option>snow</option></select></label>
+        <label class="check"><input type="checkbox" data-k="gps_ok"> GPS</label>
+        <label class="check"><input type="checkbox" data-k="cloud_online"> Cloud online</label>
+      </div>
+      <div class="nav-row">
+        <select id="dtc"><option value="P0301">P0301 misfire</option><option value="C1234">C1234 tyre pressure</option>
+          <option value="P0420">P0420 catalyst</option><option value="C0040">C0040 brakes (critical)</option></select>
+        <button id="inject">Inject fault</button>
+      </div>
+      <p class="hint"><a href="dev.html" target="_blank">Developer view</a> · <span id="llm-info"></span></p>
+    </section>
+  </div>
+
+  <div id="climate"><span>❄︎</span><b id="temp">21.0°</b><span>♨︎</span></div>
+
+  <div id="drivercam">
+    <video id="cam" playsinline muted></video>
+    <div class="cam-off">Driver camera off</div>
+    <div id="mood-label"></div>
+    <button id="cam-toggle" title="Driver camera: mood + fatigue, analysed on this computer">📷 Camera</button>
+  </div>
+
+  <div id="wasd" aria-label="Manual driving">
+    <div class="keys">
+      <span></span><button data-act="accelerate">W</button><span></span>
+      <button data-act="left">A</button><button data-act="brake">S</button><button data-act="right">D</button>
+    </div>
+    <small>drive · Q/E point · Space talk</small>
+  </div>
+
+  <div id="intro">
+    <div class="card">
+      <h1>Herbie</h1>
+      <p>Your car, with a personality. Pick an experience. Herbie drives, talks, plans and remembers; you point, ask and answer.</p>
+      <div id="exp-list" class="exp-grid"></div>
+      <p class="hint">Tips: click a landmark on the windscreen to point at it · 🎤 or hold <b>Space</b> to talk · <b>W A S D</b> takes the wheel ·
+        turn on the 📷 driver camera and Herbie reacts to how you're feeling (processed on this computer).</p>
+    </div>
+  </div>
+  <button id="menu" title="Choose an experience">☰ Experiences</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="cockpit.js"></script>
+</body>
+</html>

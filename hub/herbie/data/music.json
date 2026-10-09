@@ -1,0 +1,34 @@
+{
+  "_note": "Fictional tracks and artists for the simulated player. No audio is played.",
+  "playlists": {
+    "Herbie Radio": ["pop", "indie"],
+    "Morning Boost": ["pop", "indie", "funk"],
+    "Calm Evening (lo-fi)": ["lofi", "ambient"],
+    "Calm Drive": ["lofi", "ambient", "jazz"],
+    "Saturday Night Drive": ["dance", "hiphop"],
+    "Friday Night": ["dance", "hiphop", "pop"],
+    "Focus": ["classical", "lofi"]
+  },
+  "tracks": [
+    {"id": "t01", "title": "Linden Leaves", "artist": "Tiergarten Tapes", "genre": "lofi"},
+    {"id": "t02", "title": "Rain on the Spree", "artist": "Kiez Collective", "genre": "lofi"},
+    {"id": "t03", "title": "Slow Tram Home", "artist": "Tiergarten Tapes", "genre": "lofi"},
+    {"id": "t04", "title": "Glass Dome", "artist": "Nordlicht", "genre": "ambient"},
+    {"id": "t05", "title": "Morning Fog, Museum Island", "artist": "Nordlicht", "genre": "ambient"},
+    {"id": "t06", "title": "Blue Note Boulevard", "artist": "The Quadriga Quartet", "genre": "jazz"},
+    {"id": "t07", "title": "Late at the Konzerthaus", "artist": "The Quadriga Quartet", "genre": "jazz"},
+    {"id": "t08", "title": "Golden Hour", "artist": "Mia Sterne", "genre": "pop"},
+    {"id": "t09", "title": "Green Light Wave", "artist": "Mia Sterne", "genre": "pop"},
+    {"id": "t10", "title": "Back Seat Singalong", "artist": "Paper Planes Club", "genre": "pop"},
+    {"id": "t11", "title": "Paper Cities", "artist": "Kreuzberg Kids", "genre": "indie"},
+    {"id": "t12", "title": "Bicycle Bells", "artist": "Kreuzberg Kids", "genre": "indie"},
+    {"id": "t13", "title": "Bassline Bridge", "artist": "Oberbaum Sound System", "genre": "dance"},
+    {"id": "t14", "title": "Strobe at Revaler", "artist": "Oberbaum Sound System", "genre": "dance"},
+    {"id": "t15", "title": "Midnight Spree", "artist": "Neon Ufer", "genre": "dance"},
+    {"id": "t16", "title": "Concrete Poems", "artist": "MC Platte", "genre": "hiphop"},
+    {"id": "t17", "title": "Ringbahn Flow", "artist": "MC Platte", "genre": "hiphop"},
+    {"id": "t18", "title": "Brass in the Morning", "artist": "Funky Bellevue", "genre": "funk"},
+    {"id": "t19", "title": "Nocturne for a Quiet Street", "artist": "Ensemble Gendarmen", "genre": "classical"},
+    {"id": "t20", "title": "Prelude in Unter den Linden", "artist": "Ensemble Gendarmen", "genre": "classical"}
+  ]
+}

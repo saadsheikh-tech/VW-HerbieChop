@@ -1,0 +1,12 @@
+{
+  "P0301": {"title": "Cylinder 1 misfire", "system": "engine", "severity": "book_soon",
+            "explanation": "One cylinder isn't firing cleanly, usually a worn spark plug or ignition coil. It's safe to keep driving gently, but it should be fixed within a few days before it damages the catalytic converter."},
+  "P0420": {"title": "Catalytic converter efficiency low", "system": "exhaust", "severity": "monitor",
+            "explanation": "My exhaust cleaning is a bit below par. Nothing urgent; I'll keep an eye on it and mention it at the next service."},
+  "C1234": {"title": "Tyre pressure low (rear left)", "system": "tyres", "severity": "book_soon",
+            "explanation": "The rear left tyre is about 0.4 bar low. Probably a slow leak. Let's top it up and get it checked soon."},
+  "C0040": {"title": "Brake pressure loss (front right circuit)", "system": "brakes", "severity": "stop_now",
+            "explanation": "I'm losing brake pressure on the front right. Braking may be weaker and pull to one side."},
+  "B1015": {"title": "Passenger airbag sensor fault", "system": "safety", "severity": "book_soon",
+            "explanation": "The passenger airbag sensor isn't reporting correctly, so that airbag might not deploy. Please don't let anyone sit in the front passenger seat until it's checked."}
+}

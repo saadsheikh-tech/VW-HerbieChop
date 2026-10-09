@@ -1,0 +1,301 @@
+[
+ {
+  "id": "kwg",
+  "name": "Kaiser Wilhelm Memorial Church",
+  "type": "church",
+  "lat": 52.50481,
+  "lon": 13.33524,
+  "prominence": 1.0,
+  "short": "Its broken spire was left standing after the bombing of 1943 as a memorial against war.",
+  "story": "The church was consecrated in 1895. Bombs badly damaged it in November 1943, and instead of rebuilding it, Berlin kept the ruined tower as a memorial. Egon Eiermann added the new octagonal church with its blue glass walls between 1959 and 1963. Berliners nickname the old tower the 'hollow tooth'.",
+  "visible_m": 1000
+ },
+ {
+  "id": "bikini",
+  "name": "Bikini Berlin",
+  "type": "shopping centre",
+  "lat": 52.50555,
+  "lon": 13.33735,
+  "prominence": 0.3,
+  "short": "A concept mall in a restored 1950s building, overlooking the zoo.",
+  "story": "Bikini Berlin sits in a 1950s ensemble that got its name from the open middle floor that once split the building in two, like a bikini."
+ },
+ {
+  "id": "zoo_station",
+  "name": "Berlin Zoologischer Garten station",
+  "type": "station",
+  "lat": 52.50672,
+  "lon": 13.33246,
+  "prominence": 0.4,
+  "short": "One of West Berlin's main railway stations during the city's division.",
+  "story": "The station opened in 1882. During the Cold War it was West Berlin's most important long-distance station."
+ },
+ {
+  "id": "kadewe",
+  "name": "KaDeWe",
+  "type": "department store",
+  "lat": 52.50162,
+  "lon": 13.34113,
+  "prominence": 0.7,
+  "short": "One of Europe's largest department stores, open since 1907.",
+  "story": "The Kaufhaus des Westens opened in 1907. Its food hall on the sixth floor is famous well beyond Berlin."
+ },
+ {
+  "id": "brandenburg_gate",
+  "name": "Brandenburg Gate",
+  "type": "monument",
+  "lat": 52.51627,
+  "lon": 13.3777,
+  "prominence": 1.0,
+  "short": "A neoclassical gate from 1791 that became the symbol of German reunification.",
+  "story": "Carl Gotthard Langhans built the gate between 1788 and 1791, with the Quadriga chariot on top. For almost three decades it stood right at the Berlin Wall, and when the Wall fell in 1989 it became the symbol of a reunited Germany.",
+  "visible_m": 900
+ },
+ {
+  "id": "reichstag",
+  "name": "Reichstag building",
+  "type": "parliament",
+  "lat": 52.51862,
+  "lon": 13.37618,
+  "prominence": 1.0,
+  "short": "Seat of the German Bundestag, crowned by Norman Foster's glass dome.",
+  "story": "The building was completed in 1894. It burned in 1933, and after reunification Norman Foster rebuilt it. The walkable glass dome was finished in 1999, the same year the Bundestag moved back in.",
+  "visible_m": 1200
+ },
+ {
+  "id": "soviet_memorial",
+  "name": "Soviet War Memorial (Tiergarten)",
+  "type": "memorial",
+  "lat": 52.5163,
+  "lon": 13.3715,
+  "prominence": 0.7,
+  "short": "Erected in 1945 to honour Soviet soldiers who died in the Battle of Berlin.",
+  "story": "The memorial was built in 1945 on the Straße des 17. Juni. Although it stood in West Berlin, Soviet soldiers guarded it throughout the Cold War."
+ },
+ {
+  "id": "victory_column",
+  "name": "Victory Column",
+  "type": "monument",
+  "lat": 52.51451,
+  "lon": 13.3501,
+  "prominence": 0.9,
+  "short": "The 'Goldelse' statue on top has watched over the Tiergarten since 1873.",
+  "story": "The column was inaugurated in 1873 to commemorate Prussian military victories. It originally stood in front of the Reichstag and was moved to the Großer Stern roundabout in 1938 and 1939.",
+  "visible_m": 1500
+ },
+ {
+  "id": "bellevue",
+  "name": "Bellevue Palace",
+  "type": "palace",
+  "lat": 52.5175,
+  "lon": 13.3531,
+  "prominence": 0.7,
+  "short": "The official residence of the German Federal President.",
+  "story": "Bellevue Palace was built in 1786. Today it is the official seat of the Federal President; the flag on the roof shows when the President is in Berlin."
+ },
+ {
+  "id": "hkw",
+  "name": "Haus der Kulturen der Welt",
+  "type": "cultural centre",
+  "lat": 52.51867,
+  "lon": 13.365,
+  "prominence": 0.6,
+  "short": "Berliners call its swooping roof the 'pregnant oyster'.",
+  "story": "The building was the United States' contribution to the 1957 Interbau architecture exhibition. Today it is a centre for contemporary art and culture from around the world."
+ },
+ {
+  "id": "chancellery",
+  "name": "Federal Chancellery",
+  "type": "government",
+  "lat": 52.5202,
+  "lon": 13.369,
+  "prominence": 0.8,
+  "short": "The Chancellor's office, completed in 2001.",
+  "story": "The Federal Chancellery was completed in 2001 and is one of the largest government headquarters in the world. Berliners nicknamed it the 'washing machine'."
+ },
+ {
+  "id": "humboldt_uni",
+  "name": "Humboldt University",
+  "type": "university",
+  "lat": 52.51786,
+  "lon": 13.39338,
+  "prominence": 0.8,
+  "short": "Founded in 1810; its main building was once Prince Henry's palace.",
+  "story": "Wilhelm von Humboldt founded the university in 1810. Its main building on Unter den Linden was originally a palace for Prince Henry of Prussia."
+ },
+ {
+  "id": "neue_wache",
+  "name": "Neue Wache",
+  "type": "memorial",
+  "lat": 52.51791,
+  "lon": 13.39732,
+  "prominence": 0.7,
+  "short": "Germany's central memorial to the victims of war and dictatorship.",
+  "story": "Karl Friedrich Schinkel designed the building as a royal guardhouse, finished in 1818. Today it holds Käthe Kollwitz's sculpture of a mother with her dead son."
+ },
+ {
+  "id": "zeughaus",
+  "name": "Zeughaus (German Historical Museum)",
+  "type": "museum",
+  "lat": 52.5177,
+  "lon": 13.39693,
+  "prominence": 0.8,
+  "short": "The oldest building on Unter den Linden, built as an arsenal.",
+  "story": "The Zeughaus was built between 1695 and 1730 as the Prussian arsenal. Today it houses the German Historical Museum."
+ },
+ {
+  "id": "staatsoper",
+  "name": "Berlin State Opera",
+  "type": "opera house",
+  "lat": 52.51694,
+  "lon": 13.39498,
+  "prominence": 0.8,
+  "short": "Opened in 1742 under Frederick the Great.",
+  "story": "The opera house on Unter den Linden was inaugurated in 1742 under Frederick the Great, making it one of Berlin's oldest cultural institutions."
+ },
+ {
+  "id": "hedwig",
+  "name": "St. Hedwig's Cathedral",
+  "type": "cathedral",
+  "lat": 52.51567,
+  "lon": 13.39424,
+  "prominence": 0.8,
+  "short": "Berlin's Catholic cathedral, modelled on the Pantheon in Rome.",
+  "story": "St. Hedwig's was built between 1747 and 1773 with Frederick the Great's permission, as Berlin's first Catholic church after the Reformation. Its dome was inspired by the Pantheon."
+ },
+ {
+  "id": "konzerthaus",
+  "name": "Konzerthaus Berlin",
+  "type": "concert hall",
+  "lat": 52.51359,
+  "lon": 13.39176,
+  "prominence": 0.8,
+  "short": "Schinkel's concert hall on the Gendarmenmarkt.",
+  "story": "Karl Friedrich Schinkel built it as a theatre between 1818 and 1821. After being rebuilt following the war, it reopened as a concert hall in 1984."
+ },
+ {
+  "id": "checkpoint_charlie",
+  "name": "Checkpoint Charlie",
+  "type": "historic site",
+  "lat": 52.50751,
+  "lon": 13.39039,
+  "prominence": 0.9,
+  "short": "The best-known crossing point between East and West Berlin.",
+  "story": "From 1961 to 1990 this was the crossing point for foreigners and diplomats. In October 1961 American and Soviet tanks faced each other here for about sixteen tense hours."
+ },
+ {
+  "id": "altes_museum",
+  "name": "Altes Museum",
+  "type": "museum",
+  "lat": 52.51947,
+  "lon": 13.39847,
+  "prominence": 0.8,
+  "short": "Schinkel's museum, opened in 1830, the first on Museum Island.",
+  "story": "Karl Friedrich Schinkel designed the Altes Museum, which opened in 1830 as the first public museum on what became Museum Island, now a UNESCO World Heritage Site."
+ },
+ {
+  "id": "berliner_dom",
+  "name": "Berlin Cathedral",
+  "type": "cathedral",
+  "lat": 52.51912,
+  "lon": 13.40106,
+  "prominence": 1.0,
+  "short": "Berlin's great Protestant cathedral, completed in 1905.",
+  "story": "The cathedral on Museum Island was built between 1894 and 1905. Its crypt holds the tombs of many members of the Hohenzollern dynasty.",
+  "visible_m": 2000
+ },
+ {
+  "id": "rotes_rathaus",
+  "name": "Red City Hall",
+  "type": "city hall",
+  "lat": 52.51849,
+  "lon": 13.4087,
+  "prominence": 0.8,
+  "short": "Seat of Berlin's Governing Mayor, named after its red brick.",
+  "story": "The Rotes Rathaus was built between 1861 and 1869. It gets its name from its red clinker brick facade, not from politics.",
+  "visible_m": 1200
+ },
+ {
+  "id": "tv_tower",
+  "name": "Berlin TV Tower",
+  "type": "tower",
+  "lat": 52.52082,
+  "lon": 13.4094,
+  "prominence": 1.0,
+  "short": "At 368 metres, the tallest structure in Germany.",
+  "story": "The Fernsehturm was completed in 1969 by the GDR. When the sun shines on its steel sphere, the reflection forms a cross, which Berliners jokingly called the 'Pope's revenge'.",
+  "visible_m": 4000
+ },
+ {
+  "id": "holocaust_memorial",
+  "name": "Memorial to the Murdered Jews of Europe",
+  "type": "memorial",
+  "lat": 52.5139,
+  "lon": 13.3789,
+  "prominence": 0.9,
+  "short": "A field of 2,711 concrete slabs by architect Peter Eisenman, opened in 2005.",
+  "story": "Peter Eisenman designed the memorial as a field of 2,711 concrete stelae on uneven ground. It opened in 2005, sixty years after the end of the Second World War, with an information centre underneath."
+ },
+ {
+  "id": "adlon",
+  "name": "Hotel Adlon",
+  "type": "hotel",
+  "lat": 52.5162,
+  "lon": 13.3797,
+  "prominence": 0.6,
+  "short": "Berlin's most famous hotel, right next to the Brandenburg Gate.",
+  "story": "The original Hotel Adlon opened in 1907 and hosted royalty and film stars. It burned down after the war; the rebuilt hotel reopened in 1997 on the same spot at Pariser Platz."
+ },
+ {
+  "id": "bebelplatz",
+  "name": "Bebelplatz",
+  "type": "square",
+  "lat": 52.5164,
+  "lon": 13.3937,
+  "prominence": 0.7,
+  "short": "The square where the Nazis burned books in May 1933.",
+  "story": "On 10 May 1933 students and SA members burned around twenty thousand books here. Today a glass window in the pavement looks down onto Micha Ullman's memorial: a room of empty bookshelves."
+ },
+ {
+  "id": "humboldt_forum",
+  "name": "Humboldt Forum",
+  "type": "museum",
+  "lat": 52.5175,
+  "lon": 13.4022,
+  "prominence": 0.9,
+  "short": "A museum behind the rebuilt baroque facades of the Berlin Palace.",
+  "story": "The Berlin Palace was demolished by the GDR in 1950, and the Palace of the Republic later stood here. The palace's baroque facades were rebuilt, and the Humboldt Forum opened inside them in stages from 2020.",
+  "visible_m": 900
+ },
+ {
+  "id": "neptune_fountain",
+  "name": "Neptune Fountain",
+  "type": "fountain",
+  "lat": 52.5193,
+  "lon": 13.4066,
+  "prominence": 0.6,
+  "short": "Reinhold Begas' 1891 fountain with Neptune and four river goddesses.",
+  "story": "Reinhold Begas created the fountain in 1891. The four women around Neptune represent the rivers Rhine, Elbe, Oder and Vistula."
+ },
+ {
+  "id": "marienkirche",
+  "name": "St. Mary's Church",
+  "type": "church",
+  "lat": 52.5208,
+  "lon": 13.4067,
+  "prominence": 0.7,
+  "short": "One of Berlin's oldest churches, dating back to the 13th century.",
+  "story": "St. Mary's dates back to the 13th century. Inside is a 'Dance of Death' wall painting from the 15th century, rediscovered under layers of whitewash in the 1860s.",
+  "visible_m": 1200
+ },
+ {
+  "id": "world_clock",
+  "name": "World Clock at Alexanderplatz",
+  "type": "monument",
+  "lat": 52.5212,
+  "lon": 13.4132,
+  "prominence": 0.7,
+  "short": "The Urania World Clock, a meeting point since 1969.",
+  "story": "The World Clock was unveiled in 1969 and shows the time in cities around the globe. It's one of the most popular meeting points in Berlin."
+ }
+]

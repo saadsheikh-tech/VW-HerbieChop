@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Herbie Hub · Dev view</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="dev.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="logo">53</span><div><h1>Herbie Hub</h1><p>VW HerbieChop · cloud prototype</p></div></div>
+  <div class="pills" id="pills"></div>
+</header>
+
+<main>
+  <aside class="col left">
+    <section>
+      <h2>Scenarios</h2>
+      <div id="scenarios"></div>
+    </section>
+  </aside>
+
+  <section class="col center">
+    <div id="map"></div>
+    <div class="chat">
+      <div id="log" aria-live="polite"></div>
+      <form id="say">
+        <button type="button" id="mic" title="Talk to Herbie" aria-label="Talk to Herbie">🎤</button>
+        <input id="text" autocomplete="off" placeholder="Hey Herbie, what's that building over there?">
+        <button type="submit">Say</button>
+        <label class="tts" title="Speak Herbie's replies"><input type="checkbox" id="tts"> voice</label>
+      </form>
+    </div>
+  </section>
+
+  <aside class="col right">
+    <section>
+      <h2>Vehicle <small>VSS signals</small></h2>
+      <dl id="vehicle"></dl>
+    </section>
+    <section>
+      <h2>Pointing gesture <small>cabin camera (mock)</small></h2>
+      <div class="pad" id="pad">
+        <button data-o="-45">↖</button><button data-o="0">↑</button><button data-o="45">↗</button>
+        <button data-o="-90">←</button><button data-o="none" class="clear">×</button><button data-o="90">→</button>
+        <span></span><button data-o="180">↓</button><span></span>
+      </div>
+    </section>
+    <section>
+      <h2>Driver &amp; world <small>mocked sensors</small></h2>
+      <div class="controls">
+        <label>Fatigue <input type="range" min="0" max="1" step="0.05" data-k="fatigue"><output></output></label>
+        <label>Hunger <input type="range" min="0" max="1" step="0.05" data-k="hunger"><output></output></label>
+        <label>Speed <input type="range" min="0" max="160" step="5" data-k="speed"><output></output></label>
+        <label>Passengers <input type="number" min="0" max="8" data-k="passengers"></label>
+        <label>Weather <select data-k="weather"><option>dry</option><option>rain</option><option>snow</option></select></label>
+        <label>Zone <select data-k="zone"><option>city</option><option>highway</option><option>residential</option><option>school_zone</option></select></label>
+        <label class="check"><input type="checkbox" data-k="gps_ok"> GPS</label>
+        <label class="check"><input type="checkbox" data-k="cloud_online"> Cloud online</label>
+        <label class="check"><input type="checkbox" data-k="playing"> Drive (play sim)</label>
+      </div>
+      <div class="row">
+        <select id="dtc">
+          <option value="P0301">P0301 misfire (book soon)</option>
+          <option value="C1234">C1234 tyre pressure (book soon)</option>
+          <option value="P0420">P0420 catalyst (monitor)</option>
+          <option value="C0040">C0040 brake pressure (stop now)</option>
+          <option value="B1015">B1015 airbag sensor (book soon)</option>
+        </select>
+        <button id="inject">Inject fault</button>
+      </div>
+      <div class="row">
+        <button id="trip">Start trip</button>
+        <button id="cleardtc">Clear faults</button>
+        <button id="reset" class="danger">Reset memory</button>
+      </div>
+    </section>
+    <section>
+      <h2>Memory <small>latest episodes</small></h2>
+      <ol id="memory"></ol>
+    </section>
+  </aside>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="dev.js"></script>
+</body>
+</html>

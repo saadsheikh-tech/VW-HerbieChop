@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+hub/data/
+*.db
+.env
+.DS_Store
+
+# challenge briefs from VW/CODE: kept locally, not published
+docs/*.pdf

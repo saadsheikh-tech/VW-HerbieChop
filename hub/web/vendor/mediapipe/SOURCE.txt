@@ -1,0 +1,2 @@
+MediaPipe Tasks Vision 1.1.0 (Apache-2.0, Google) and the face_landmarker float16 model.
+Vendored so the driver camera works offline. Images never leave the browser.
